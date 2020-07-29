@@ -37,6 +37,18 @@ class DispatchCenter {
 // 实例化调度中心
 let dispatchCenter = new DispatchCenter()
 
+dispatchCenter.addSubscibe('A', A)
+dispatchCenter.addSubscibe('B', B)
+function A(...args) {
+  console.log('A收到了：', args)
+}
+function B(...args) {
+  console.log(`B接收到了：`, args)
+}
+
+dispatchCenter.publish('A', '喜洋洋更新到201集了!')
+dispatchCenter.publish('B', '熊出没更新到11集了!')
+
 
 
 
