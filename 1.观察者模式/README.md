@@ -7,7 +7,7 @@
 3. 通知Observer => notify
 
 
-# 多个观察者对象Observer（观察者-订阅者）
+# 观察者对象Observer（观察者-订阅者）
 1. 接受subject状态变更通知并处理
 
 # 被观察者和观察者之间的关系
